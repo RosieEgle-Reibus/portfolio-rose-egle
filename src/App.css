@@ -48,13 +48,16 @@ header {
   height: 800px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   color: white;
 }
 
 nav {
   display: flex;
   justify-content: left;
-  width: 100vw;
+  width: 95vw;
+  margin: 30px auto;
+  
 }
 
 a {
@@ -64,30 +67,93 @@ a {
   align-items: right;
   padding: 10px;
 }
+
 a img {
   max-width: 50px;
 }
 
-.header-div {
-  height: 90vh;
+/* .header-div {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-}
+  
+} */
 
 .header-container {
   width: 100vw;
-  margin: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: baseline;
+  /* background-color: yellowgreen; */
 }
 
-header h1 {
+.header-title {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: left;
+  align-items: flex-end;
+}
+
+
+.taco {
+  background-image: url('./images/Taco-01.svg');
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+}
+
+h1 {
   font-size: 150px;
   font-weight: 400;
-  margin: 50px;
+  
 }
 
 header h2 {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 60px;
-  margin: 50px;
+  
+}
+
+.about {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.about-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.about-paragraph {
+  width: 40vw;
+  font-size: 28px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.skills-container {
+  height: 1200px;
+  background-color: #ffde03;
+
+  align-items: baseline;
+}
+
+.skills {
+  height: 1000px;
+  /* border: 10px solid black; */
+  display: flex;
+  align-items: flex-end;
+  background-image: url('./images/toolBelt-01.svg');
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 200px;
 }
