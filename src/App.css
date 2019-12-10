@@ -9,6 +9,8 @@
 h1 {
   font-size: 120px;
   font-weight: 400;
+  text-decoration: underline;
+  margin: 20px 0;
 }
 
 nav {
@@ -19,7 +21,6 @@ nav {
   flex-direction: row;
   width: 100%;
   margin: 0;
-  position: fixed;
   top: 0;
   background: #d82265;
   z-index: 2;
@@ -55,10 +56,11 @@ header {
   align-items: flex-end;
   padding: 50px;
   margin: 100px 0 0 0;
-  height: 500px;
+  height:400px;
+  /* background-color: teal; */
 }
 
-.fade-in {
+ /* .fade-in {
   animation: fadeIn ease 5s;
 }
 
@@ -69,7 +71,7 @@ header {
   100% {
     opacity:1;
   }
-}
+} */
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -85,7 +87,7 @@ header {
   to {
     transform: rotate(360deg);
   }
-} 
+}  
 
 .header-title .taco {
   background-image: url('./images/Taco-01.svg');
@@ -102,18 +104,30 @@ header {
   font-size: 150px;
   font-weight: 400;
   margin: 0 0 0 9px;
+  text-decoration: none;
 }
 
 .about {
-  height: 600px;
+  margin: 150px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 .about-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.about img {
+  width: 500px;
+  border: 10px solid black;
+}
+
+.about h1 {
+  text-align: center;
 }
 
 p {
@@ -127,16 +141,13 @@ p {
 }
 
 .skills-container {
-  height: 1000px;
+  height: 1050px;
   background-color: #ffde03;
   align-items: baseline;
   background-image: url('./images/toolBelt-01.svg');
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .header-tagline {
@@ -156,21 +167,29 @@ p {
 }
 
 .skills-div {
-  padding-top: 50px;
-  padding-left: 100px;
+  /* padding-top: 40px; */
+  margin-left: 100px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
-
 .icons {
   width: 600px;
+  background-color: black;
+  border-radius: 10px;
+  color: #ffde03;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   font-size: 120px;
-  
+  padding: 20px 0;
 }
 
 i {
-  margin: 10px;
+  margin: 5px 30px;
 }
 
 .work {
@@ -237,5 +256,15 @@ button a {
   color: white;
   font-family: 'Archivo Black', sans-serif;
   font-size: 24px;
+}
 
+.about p {
+  margin: 20px;
+  text-indent: 50px;
+  text-align: left;
+}
+
+.contact {
+  height: 200px;
+  background: #d82265;
 }

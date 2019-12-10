@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import habitual from './images/Habitual.png';
 import utterNonsense from './images/UtterNonsense.png'
 import simon from './images/Simon.png'
+import aboutImage from './images/CircleImage.jpg'
 import './App.css';
 
 function App() {
@@ -21,11 +22,11 @@ function App() {
           <a href="https://www.linkedin.com/in/rose-egle-519280195/"><img src={linkedInLogo} color="white" /></a>
         </nav>
             <div className="header-title">
-              <h1 className="fade-in">rose egle</h1>
+              <h1 className="animated slideInLeft">rose egle</h1>
               <div className="taco"></div>
             </div>
 
-            <div className="header-tagline fade-in">
+            <div className="header-tagline animated slideInLeft delay-0.5s">
               <h2>Blending logic, aesthetics and tacos.</h2>
             </div>
       </header>
@@ -99,14 +100,15 @@ function App() {
       </div>
       </div>
       <div className="about">
-        <div className="about-div">
-          <h1>about</h1>
+          <img src={aboutImage} className="animated fadeIn" />
           <div className="about-paragraph">
-            <p>I have a background in graphic design and upper level restaurant management and this year I became a Software Engineering Fellow at General Assembly.  I chose to pursue software engineering because it presents the opportunity to blend the analytical and logical part of my brain with the creative, aesthetically focused part.  I love how intellectually stimulating code is.  Making clean, functional code that is intuitive to use and pairing it with beautiful design is an immensely satisfying challenge for me.</p>
+          <h1>About</h1>
+            <p>I grew up in the mountains of North Carolina and I have a background in graphic design and upper level restaurant management.  This year I became a Software Engineering Fellow at General Assembly.  </p>
+              <p>I chose to pursue software engineering because it presents the opportunity to blend the analytical and logical part of my brain with the creative, aesthetically focused part.  I love how intellectually stimulating code is.  Making clean, functional code that is intuitive to use and pairing it with beautiful design is an immensely satisfying challenge for me.</p>
           </div>
         </div>
-      </div>
-      <div className="taco"></div>
+    
+      <div className="contact"></div>
 
     </div>
     {/* <Switch>
