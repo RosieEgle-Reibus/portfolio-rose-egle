@@ -35,7 +35,7 @@ function App() {
         <h1>Work</h1>
       <div className="work-container">
          <div className="work-img-div">
-           <a><img src={freshlyGrown} className="work-img"/></a>
+           <a href="https://freshly-grown.herokuapp.com"><img src={freshlyGrown} className="work-img"/></a>
          </div>
         <div className="work-desc-div">
           <h2>Freshly Grown</h2>
@@ -54,12 +54,12 @@ function App() {
           <button><a href="https://github.com/sunnysideupegle/habitual">GitHub Repo</a></button>
         </div>
         <div className="work-img-div">
-           <a><img src={habitual} className="work-img"/></a>
+           <a href="https://habit-project-three.herokuapp.com/"><img src={habitual} className="work-img"/></a>
          </div>
        </div>
        <div className="work-container">
          <div className="work-img-div">
-           <a><img src={utterNonsense} className="work-img"/></a>
+           <a href="https://project-two-rose-egle.herokuapp.com"><img src={utterNonsense} className="work-img"/></a>
          </div>
         <div className="work-desc-div">
           <h2>Utter Nonsense</h2>
@@ -78,7 +78,7 @@ function App() {
           <button><a href="https://github.com/sunnysideupegle/Simon">GitHub Repo</a></button>
         </div>
         <div className="work-img-div">
-           <img src={simon} className="work-img"/>
+           <a href="http://simonbyroseegle.surge.sh/"><img src={simon} className="work-img"/></a>
          </div>
        </div>
 
