@@ -9,6 +9,7 @@ import habitual from './images/Habitual.png';
 import utterNonsense from './images/UtterNonsense.png'
 import simon from './images/Simon.png'
 import aboutImage from './images/CircleImage.jpg'
+import tacoLogo from './images/TacoLogo.svg'
 import './App.css';
 
 function App() {
@@ -25,7 +26,6 @@ function App() {
               <h1 className="animated slideInLeft">rose egle</h1>
               <div className="taco"></div>
             </div>
-
             <div className="header-tagline animated slideInLeft delay-0.5s">
               <h2>Blending logic, aesthetics and tacos.</h2>
             </div>
@@ -35,7 +35,7 @@ function App() {
         <h1>Work</h1>
       <div className="work-container">
          <div className="work-img-div">
-           <img src={freshlyGrown} className="work-img"/>
+           <a><img src={freshlyGrown} className="work-img"/></a>
          </div>
         <div className="work-desc-div">
           <h2>Freshly Grown</h2>
@@ -54,12 +54,12 @@ function App() {
           <button><a href="https://github.com/sunnysideupegle/habitual">GitHub Repo</a></button>
         </div>
         <div className="work-img-div">
-           <img src={habitual} className="work-img"/>
+           <a><img src={habitual} className="work-img"/></a>
          </div>
        </div>
        <div className="work-container">
          <div className="work-img-div">
-           <img src={utterNonsense} className="work-img"/>
+           <a><img src={utterNonsense} className="work-img"/></a>
          </div>
         <div className="work-desc-div">
           <h2>Utter Nonsense</h2>
@@ -103,13 +103,23 @@ function App() {
           <img src={aboutImage} className="animated fadeIn" />
           <div className="about-paragraph">
           <h1>About</h1>
-            <p>I grew up in the mountains of North Carolina and I have a background in graphic design and upper level restaurant management.  This year I became a Software Engineering Fellow at General Assembly.  </p>
+            <p>I grew up in the mountains of North Carolina and I have a background in graphic design and upper level restaurant management.  This year I became a Software Engineering Fellow at General Assembly. </p>
               <p>I chose to pursue software engineering because it presents the opportunity to blend the analytical and logical part of my brain with the creative, aesthetically focused part.  I love how intellectually stimulating code is.  Making clean, functional code that is intuitive to use and pairing it with beautiful design is an immensely satisfying challenge for me.</p>
           </div>
         </div>
     
-      <div className="contact"></div>
-
+      <div className="contact">
+      <img src={tacoLogo} width="200"/>
+      <div className="contact-info">
+      <a href="https://github.com/sunnysideupegle"><h3>GitHub</h3></a>
+      <a href="https://www.linkedin.com/in/rose-egle-519280195/"><h3>LinkedIn</h3></a>
+        <h3>EMAIL</h3>
+        <p>rosiemegle89@gmail.com</p>
+        </div>
+      </div>
+    <div className="copyright">
+      <p>Copyright Rose Egle 2019</p>
+    </div>
     </div>
     {/* <Switch>
       <Route exact path='/' component={App} />

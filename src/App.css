@@ -1,9 +1,8 @@
 
 * {
-  
   margin: 0;
   font-family: 'Archivo Black', sans-serif;
- 
+  box-sizing: border-box;
 }
 
 h1 {
@@ -34,7 +33,7 @@ a {
   padding: 10px;
 }
 
-a img {
+nav a img {
   width: 50px;
   height: 50px;
 }
@@ -43,6 +42,7 @@ header {
   background: #d82265;
   color: white;
   width: 100%;
+  /* box-sizing: border-box; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   
 }
@@ -56,23 +56,9 @@ header {
   align-items: flex-end;
   padding: 50px;
   margin: 100px 0 0 0;
-  height:400px;
+  height:300px;
   /* background-color: teal; */
 }
-
- /* .fade-in {
-  animation: fadeIn ease 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-} */
-
 
 @media (prefers-reduced-motion: no-preference) {
   .taco {
@@ -200,22 +186,29 @@ i {
 .work-container {
   display: flex;
   justify-content: space-between;
-  margin: 100px 0;
+  margin-top: 100px ;
 }
+
+/* .work a  {
+  width: 900px;
+  height: 800px;
+  border-radius: 20px;
+  padding: 15px;
+} */
 
 .work-img-div {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
-  width: 930px;
   border: 5px solid black;
   border-radius: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   margin: 20px
 }
+
 .work-img {
   width: 900px;
   border-radius: 20px;
+  padding: 15px;
 }
 
 .work-desc-div {
@@ -265,6 +258,35 @@ button a {
 }
 
 .contact {
-  height: 200px;
   background: #d82265;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: center;;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.contact-info h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin: 5px;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #d82265;
+  font-size: 12px;
+  padding: 5px;
 }
