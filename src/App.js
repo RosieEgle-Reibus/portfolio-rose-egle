@@ -12,6 +12,9 @@ import aboutImage from './images/CircleImage.jpg'
 import tacoLogo from './images/TacoLogo.svg'
 import './App.css';
 
+// className="animated slideInLeft"
+// animated slideInLeft delay-0.5s
+
 function App() {
   return (
     <Router>
@@ -23,10 +26,10 @@ function App() {
           <a href="https://www.linkedin.com/in/rose-egle-519280195/"><img src={linkedInLogo} color="white" /></a>
         </nav>
             <div className="header-title">
-              <h1 className="animated slideInLeft">rose egle</h1>
+              <h1>rose egle</h1>
               <div className="taco"></div>
             </div>
-            <div className="header-tagline animated slideInLeft delay-0.5s">
+            <div className="header-tagline">
               <h2>Blending logic, aesthetics and tacos.</h2>
             </div>
       </header>
@@ -40,17 +43,23 @@ function App() {
         <div className="work-desc-div">
           <h2>Freshly Grown</h2>
           <p>An online farmers market, with the purpose of making it easier for farmers to sell produce to restaurants.</p>
+          <div className="work-skills-and-button">
+            <div className="work-skills">
           <h3>Skills</h3>
           <p>React, AJAX, Python, SQL, Javascript, Node, CSS and HTML</p>
+          </div>
           <button><a href="https://github.com/sunnysideupegle/freshly-grown">GitHub Repo</a></button>
+          </div>
         </div>
        </div>
-       <div className="work-container">
+       <div className="work-container switch">
         <div className="work-desc-div">
           <h2>Habitual</h2>
           <p>An app to make habit tracking easier and more fun, with an easy to use interface and a randomly generated reward for the amount of tasks completed.</p>
+          <div className="work-skills">
           <h3>Skills</h3>
           <p>React, AJAX, MongoDB, Javascript, Node.js, CSS and HTML</p>
+          </div>
           <button><a href="https://github.com/sunnysideupegle/habitual">GitHub Repo</a></button>
         </div>
         <div className="work-img-div">
@@ -64,17 +73,21 @@ function App() {
         <div className="work-desc-div">
           <h2>Utter Nonsense</h2>
           <p>Remake of the classic mad-libs with a new-age, internet-centric spin, letting users add photos and hashtags.</p>
+          <div className="work-skills">
           <h3>Skills</h3>
           <p> HTML, CSS, JavaScript, Node, Express, and MongoDB</p>
+          </div>
           <button><a href="https://github.com/sunnysideupegle/utter-nonsense">GitHub Repo</a></button>
         </div>
        </div>
-       <div className="work-container">
+       <div className="work-container switch">
         <div className="work-desc-div">
           <h2>Simon</h2>
           <p>All the wonder of the Simon game with the add fun of Bop-it functionality.</p>
+          <div className="work-skills">
           <h3>Skills</h3>
           <p>Javascript, CSS and HTML</p>
+          </div>
           <button><a href="https://github.com/sunnysideupegle/Simon">GitHub Repo</a></button>
         </div>
         <div className="work-img-div">
@@ -100,7 +113,7 @@ function App() {
       </div>
       </div>
       <div className="about">
-          <img src={aboutImage} className="animated fadeIn" />
+          <img src={aboutImage} />
           <div className="about-paragraph">
           <h1>About</h1>
             <p>I grew up in the mountains of North Carolina and I have a background in graphic design and upper level restaurant management.  This year I became a Software Engineering Fellow at General Assembly. </p>
