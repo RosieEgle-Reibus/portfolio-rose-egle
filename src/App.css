@@ -394,7 +394,10 @@ h1 {
 /* Less than 900px */
 
 
-@media  (max-width: 900px)  {
+@media only screen 
+   and (max-width : 768px) 
+   and (max-height : 1024px) 
+  {
   nav {
     height: 80px;
   }
@@ -502,6 +505,27 @@ h1 {
 
 
 @media (max-width: 600px) {
+body {
+  max-width: 600px;
+}
+
+
+  nav a img {
+    height: 40px;
+    width: 40px;
+  } 
+
+  .header-title {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  
+  .header-title .taco {
+    animation: none;
+    min-width: 250px;
+    min-height: 250px;
+  }
+
   
 
   .work-img-div {
